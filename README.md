@@ -23,4 +23,14 @@ git push
 git clone https://github.com/Cazotti/git-test.git
 ```
 
+## Criação e Manuseio de Branch's
+```
+git branch --> Lista todas as Branch's.
+git log-graph --> Lista todas as Branch's graficamente.
+git branch "cat" --> Cria uma Branch.
+git checkout cat --> Altera para a Branch informada.
+git merge cat --> Mescla duas Branch's.
+
+```
+
 Mais informações: https://www.treinaweb.com.br/blog/comandos-do-git-que-voce-precisa-conhecer-parte-1/
