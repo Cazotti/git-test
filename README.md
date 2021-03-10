@@ -33,3 +33,16 @@ git merge "name-branch" --> Mescla duas Branch's.
 git branch -d "name-branch" --> Remove a Branch.
 git push origin "name-branch" --> Sobe a Branch local para o repositório.
 ```
+
+## Stashing
+```
+git stash save --> Salva os arquivos que ainda não foram concluidos em uma área temporária.
+git stash apply --> Aplica o stash posicionado no topo da fila.
+git stash apply [stash@[1]]--> Aplica o stash que foi passado. 
+
+git stash drop --> Exclui o stach no topo da fila. 
+git stash list --> Limpa toda a lista de staches.
+
+git stash list --> Mostra a lista de stashes sendo utilizados.
+git stash show [stash@[1]]--> Mostra os dados do stash passado.
+```
