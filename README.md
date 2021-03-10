@@ -27,10 +27,8 @@ git clone https://github.com/Cazotti/git-test.git
 ```
 git branch --> Lista todas as Branch's.
 git log-graph --> Lista todas as Branch's graficamente.
-git branch "cat" --> Cria uma Branch.
-git checkout cat --> Altera para a Branch informada.
-git merge cat --> Mescla duas Branch's.
-
+git branch "name-branch" --> Cria uma Branch.
+git checkout "name-branch" --> Altera para a Branch informada.
+git merge "name-branch" --> Mescla duas Branch's.
+git branch -d "name-branch" --> Remove a Branch.
 ```
-
-Mais informações: https://www.treinaweb.com.br/blog/comandos-do-git-que-voce-precisa-conhecer-parte-1/
