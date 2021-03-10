@@ -22,4 +22,5 @@ git push
 ```
 git clone https://github.com/Cazotti/git-test.git
 ```
-https://www.treinaweb.com.br/blog/comandos-do-git-que-voce-precisa-conhecer-parte-1/
+
+Mais informações: https://www.treinaweb.com.br/blog/comandos-do-git-que-voce-precisa-conhecer-parte-1/
