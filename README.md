@@ -1,11 +1,13 @@
-# Título I
-## Título II
-### Título III
+## Realizando Commit's
 
-> A
-> A
+> git satus --> Informa o estado atual do repositório.
+> git add (*, all, README.txt, *.txt)
+> git commit -m "Comentário aqui."
 
-`GitHub`
+## Subindo para o Repositório
 
-> B
-> B
+> git push
+
+## Clonando Repositórios
+
+> git clone (HTTPS do repositório, ex: https://github.com/Cazotti/git-test.git)
