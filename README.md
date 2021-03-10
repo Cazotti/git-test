@@ -31,4 +31,5 @@ git branch "name-branch" --> Cria uma Branch.
 git checkout "name-branch" --> Altera para a Branch informada.
 git merge "name-branch" --> Mescla duas Branch's.
 git branch -d "name-branch" --> Remove a Branch.
+git push origin "name-branch" --> Sobe a Branch local para o repositório.
 ```
