@@ -34,11 +34,17 @@ git push origin "name-branch" --> Sobe a Branch local para o repositório.
 ```
 
 ## Rebase
+```
+git rebase (--continue | --abort | --skip)
+```
+
 > Rebase Simple
 ```
+git checkout "main/master"
 git fetch
-git rebase
+git rebase "name.branch"
 ```
+
 > Rebase Simple^2
 ```
 git checkout "name.branch"
@@ -47,10 +53,30 @@ git checkout "main/master"
 git merge "name.branch"
 ```
 ## Interactive Rebase
-> Rebase recap
+> Rebase Simple^3 (Trocar ordem de commits)
 ```
-git checkout "name.branch"
-git rebase "main/master"
+git rebase -i HEAD~4
+git rebase --continue
+```
+> Rebase Simple^4 (Alterar mensagem do commit)
+```
+git rebase -i HEAD~4
+(trocar pick por reword)
+git rebase --continue
+```
+> Rebase Simple^4 (Transformar 1 commit em dois ou mais)
+```
+git rebase -i HEAD~4
+(trocar pick por edit)
+git reset HEAD^
+Realizar commit separados
+git rebase --continue
+```
+> Rebase Simple^5 (Transformar 2 commits em um)
+```
+git rebase -i HEAD~4
+(trocar pick por squash no ultimo)
+git rebase --continue
 ```
 
 ## Stashing
@@ -60,7 +86,7 @@ git stash apply --> Aplica o stash posicionado no topo da fila.
 git stash apply [stash@[1]]--> Aplica o stash que foi passado. 
 
 git stash drop --> Exclui o stach no topo da fila. 
-git stash list --> Limpa toda a lista de staches.
+git stash clear --> Limpa toda a lista de staches.
 
 git stash list --> Mostra a lista de stashes sendo utilizados.
 git stash show [stash@[1]]--> Mostra os dados do stash passado.
