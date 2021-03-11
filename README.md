@@ -53,3 +53,15 @@ git filter-branch --tree-filter 'rm -f passwords.txt' --prune-empty -- --all
 
 git filter-branch -f --prune-empty -- --all --> Limpa os commits vazios.
 ```
+
+# Submodules
+```
+git submodule add git@example.com:css.git --> Adiciona um submodulo ao repositório.
+git submodule init
+git submodule update
+```
+#Reflog
+```
+git reflog
+```
+
