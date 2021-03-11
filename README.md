@@ -1,32 +1,31 @@
 ## Criando localmente
 ```
-git init
-git branch -M "main/master" 
-git remote add origin https://github.com/Cazotti/git-test.git
-git pull -u origin main
+$ git init
+$ git branch -M "main/master" 
+$ git remote add origin https://github.com/Cazotti/git-test.git
+$ git pull -u origin main
 ```
 
 ## Realizando Commit's
 ```
-git status
-git add (*, all, README.txt, *.txt)
-git commit -m "Comentário aqui."
+$ git status
+$ git add (*, all, README.txt, *.txt)
+$ git commit -m "Comentário aqui."
 ```
 
 ## Subindo para o Repositório
 ```
-git push
+$ git push
 ```
 
 ## Clonando Repositório
 ```
-git clone https://github.com/Cazotti/git-test.git
+$ git clone https://github.com/Cazotti/git-test.git
 ```
 
 ## Criação e Manuseio de Branch's
 ```
 git branch --> Lista todas as Branch's.
-git log-graph --> Lista todas as Branch's graficamente.
 git branch "name-branch" --> Cria uma Branch.
 git checkout "name-branch" --> Altera para a Branch informada.
 git merge "name-branch" --> Mescla duas Branch's.
@@ -45,4 +44,12 @@ git stash list --> Limpa toda a lista de staches.
 
 git stash list --> Mostra a lista de stashes sendo utilizados.
 git stash show [stash@[1]]--> Mostra os dados do stash passado.
+```
+
+# Purging History
+```
+git filter-branch --tree-filter <command> -- --all --> Percorre todo o repositório, incluindo as branches executando o comando especificado.
+git filter-branch --tree-filter 'rm -f passwords.txt' --prune-empty -- --all
+
+git filter-branch -f --prune-empty -- --all --> Limpa os commits vazios.
 ```
