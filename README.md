@@ -33,6 +33,26 @@ git branch -d "name-branch" --> Remove a Branch.
 git push origin "name-branch" --> Sobe a Branch local para o repositório.
 ```
 
+## Rebase
+> Rebase Simple
+```
+git fetch
+git rebase
+```
+> Rebase Simple^2
+```
+git checkout "name.branch"
+git rebase "main/master"
+git checkout "main/master"
+git merge "name.branch"
+```
+## Interactive Rebase
+> Rebase recap
+```
+git checkout "name.branch"
+git rebase "main/master"
+```
+
 ## Stashing
 ```
 git stash save --> Salva os arquivos que ainda não foram concluidos em uma área temporária.
